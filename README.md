@@ -34,3 +34,14 @@
     - Now we run the build script, and make the HTML look for the created dist/main.js file
 
     - As default, the webpack will look for an index.js file. To edit this configurations, we will create a webpack.config.js file
+
+### Adding SCSS (and Loaders)
+
+     - We added a style.scss file. When we try to bundle it, it says we need a loader.
+        - npm install --save-dev sass
+
+     - Webpack Loaders process files that aren't JS
+        - We want to get the css code, and tell JS to inject the css styles
+
+    - We are going to install different loaders for that:
+        - npm install --save-dev css-loader style-loader sass-loader
