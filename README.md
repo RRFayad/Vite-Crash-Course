@@ -68,3 +68,44 @@
 ### Other Builders
 
 - Other builders are kinda the same, but Snowpack kind of split the build in chuncks, in order to avoid redundancy when rebuilding (mainly the modules), so it will rebuild faster
+
+## Vite
+
+### Why Vite?
+
+    - Vite pre bundles dependencies that don't changes often
+
+    - Vite is partially inspired in Snowpack
+
+    - Vite has multi page support out of the box
+        - We jst need to add a folder with an index.html file, and the multi page render s ready
+
+    - To build for production we only need to put the entrypoint in the vite config file
+
+    - Vite also has automatic CSS code splitting
+
+    - Optimized async chunck loading
+
+    - Polyfill to work i all browsers
+
+    - Faster dependency pre buildng
+
+### Coding:
+
+- npm init vite
+
+  - npm run dev
+  - npm run build
+  - npm run preview
+
+- Vite vs npx create-react-app
+
+  - npm init vite (choose react and javascript)
+  - npm i (install dependencies)
+  - npm run dev
+  - npm run build
+    - 144kb vs 544kb
+    - Vite is way faster (almost instant), and also, the state continue when updating the code
+
+- Easier to deploy
+  - cloudfare pages
