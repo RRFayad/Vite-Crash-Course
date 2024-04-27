@@ -45,3 +45,26 @@
 
     - We are going to install different loaders for that:
         - npm install --save-dev css-loader style-loader sass-loader
+
+### Plugins
+
+    -Loaders will do the most of the heavy lifting, but we can also use plugins
+        - A plugin let you to tap into the entire compilation lifecycle
+
+    - We are gonna use npm install --save-dev webpack-bundle-analyzer
+        - Add it to the webpack config
+        - It will let us analyze the impact of each library in our code
+
+### Dev Server
+
+    - Dev Servers help us to recompile the code automatically (so I don't have to run build manually)
+
+    - npm install --save-dev webpack-dev-server
+
+    - Config it in the webpack.config
+        - Usually we also config a script in the package json:
+            -  "dev": "webpack serve"
+
+### Other Builders
+
+- Other builders are kinda the same, but Snowpack kind of split the build in chuncks, in order to avoid redundancy when rebuilding (mainly the modules), so it will rebuild faster
