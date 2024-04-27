@@ -1,0 +1,20 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "description": "- References:\r   - https://www.youtube.com/watch?v=5IG4UmULyoA\r   - https://www.youtube.com/watch?v=LQQ3CR2JTX8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
