@@ -25,9 +25,12 @@
             import { camelCase } from "lodash";
             console.log(camelCase("Hello World"));
         ```
+
     - So we will install WebPack as a dev dependency
         - npm install --save-dev webpack webpack-cli
         - We usually create the build script in the package.json:
             - "build": "webpack"
 
     - Now we run the build script, and make the HTML look for the created dist/main.js file
+
+    - As default, the webpack will look for an index.js file. To edit this configurations, we will create a webpack.config.js file
